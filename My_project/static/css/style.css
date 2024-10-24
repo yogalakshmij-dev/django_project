@@ -1,0 +1,1084 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+/* signup page  */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/student.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.form-card {
+    background: rgb(255 255 255 / 26%); /* White background with some transparency */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure form card is above background */
+}
+
+.form-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.messages {
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Green background for success messages */
+    color: #155724; /* Darker green text */
+}
+
+.alert-error {
+    background-color: #d41d2f; /* Red background for error messages */
+    color: #f5bac0; /* Darker red text */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative; /* For positioning icons */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 40px; /* Space for icons */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.form-group label {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 18px;
+    color: #aaa; /* Light gray for labels */
+}
+
+.form-group i {
+    position: absolute;
+    left: -41px;
+    top: 10px; /* Positioning the icons */
+    font-size: 25px;
+    color: #007bff; /* Icon color */
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #19c8d4; Primary button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* .btn:hover {
+    /* background-color: #0056b3; Darker blue on hover 
+} */
+
+.already-registered {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.already-registered a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.already-registered a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+/* alter message */
+.messages {
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold; /* Make the text bold for better visibility */
+}
+
+.alert.success {
+    background-color: #28a745; /* Green for success */
+}
+
+.alert.error {
+    background-color: #dc3545; /* Red for errors */
+}
+
+.alert.warning {
+    background-color: #ffc107; /* Yellow for warnings */
+    color: #856404; /* Darker text color for contrast */
+}
+
+.alert.info {
+    background-color: #17a2b8; /* Blue for informational messages */
+}
+
+
+
+
+
+/* login style */
+/* Overall layout for login container */
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f5;
+    /* background: url('../images/login.jfif') no-repeat center center ; */
+}
+
+/* Left section for image */
+.image-section {
+    width: 50%;
+    background: url('../images/Fingerprint-amico.png') no-repeat center center;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content {
+    text-align: center;
+    color: rgb(14, 14, 14);
+}
+
+.image-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.image-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.join-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.join-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Right section for login form */
+.form-section {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff3b30;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #cc3025;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Login with social media section */
+.login-with {
+    font-size: 14px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.google-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285f4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-links {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.icons a {
+    margin: 0 10px;
+    color: #666;
+    font-size: 20px;
+}
+
+.icons a:hover {
+    color: #333;
+}
+
+
+
+/* home */
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #a5c0e9;
+    color: #333;
+}
+
+/* Navbar */
+/* Navigation Bar Styles */
+.navbar {
+    background: linear-gradient(90deg, #007bff, #00bfff); /* Gradient background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Font size for brand */
+    font-weight: bold; /* Bold brand text */
+    color: white; /* Brand text color */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white; /* Nav link color */
+    font-size: 1.1rem; /* Font size for nav links */
+    padding: 10px 15px; /* Padding for nav links */
+    transition: background 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2); /* Background on hover */
+    transform: translateY(-2px); /* Slightly lift on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.user-profile {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center align items */
+    color: white; /* Color for username */
+    margin-left: auto; /* Push to the right */
+    padding: 10px; /* Padding around user profile */
+}
+
+.user-profile i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5rem; /* Icon size */
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link {
+        font-size: 1rem; /* Smaller font size on mobile */
+    }
+}
+
+
+
+/* Hero Section Styles */
+.hero-section {
+    background-image: url('../images/ready-back-school.jpg'); /* Add a background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* White text color */
+    position: relative; /* For overlay */
+    margin-left: -97px;
+    width: 115%;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay for better text contrast */
+}
+
+.hero-content {
+    position: relative; /* Position relative to the hero-section */
+    z-index: 1; /* Bring content above the overlay */
+    max-width: 800px; /* Limit the width of the content */
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem; /* Adjust paragraph font size */
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Smaller paragraph on mobile */
+    }
+
+    .btn-primary {
+        font-size: 1rem; /* Smaller button text on mobile */
+    }
+}
+
+/* about section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f0f4ff;
+    position: relative;
+    width: 115%;
+    padding: 90px 100px 90px;
+    margin-left: -97px;
+    height: 100vh;
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+.about-content h1 {
+    font-size: 2.5em;
+    color: #2a2a72;
+    margin-bottom: 20px;
+}
+
+.about-content h1 span {
+    color: #1a8cff;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: #1a8cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.image-container {
+    display: flex;
+    gap: 20px;
+}
+
+.image-container img {
+    border-radius: 50%;
+    width: 195px;
+    height: 195px;
+    object-fit: cover;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.6), rgba(0,0,0,0));
+    border-radius: 50%;
+}
+
+.about-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255,255,255,0.6), rgba(0,0,0,0));
+    border-radius: 50%;
+}
+
+/* student Section Styling */
+.student-section {
+    padding: 50px;
+    max-width: 1287px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.student-table thead {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+.student-table th, .student-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.student-row {
+    transition: background-color 0.3s ease;
+}
+
+.student-row:hover {
+    background-color: #e2f3ff;
+    cursor: pointer;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Action Buttons */
+.action-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .student-table th, .student-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+/* Contact Section Styling */
+.contact-section {
+    background-color: #f0f4ff;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 150px 100px 103px;
+    margin-left: -97px;
+    height: 100vh;
+    width: 115%;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-section .intro-text {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item .icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.contact-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.contact-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-item p a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.contact-item p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+/* Footer Styles */
+footer {
+    background-color: #007bff; /* Classic blue background */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Spacing inside the footer */
+    text-align: center; /* Center the text */
+    width: 115%; /* Set width to 100% of the container */
+    position: relative;
+    bottom: 0;
+    margin-top: -20px; 
+    margin-left: -97px;  
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.footer-links span {
+    color: #ffffff; /* White color for separator */
+    padding: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links a {
+        padding: 5px 0; /* More padding on mobile for easier clicking */
+    }
+}
+
+
+/* edit style  */
+/* Overall Form Styles */
+.student-form {
+    max-width: 670px; /* Maximum width for the form */
+    margin: 90px auto; /* Center the form */
+    padding: 20px 30px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(to right, #f7f9fc, #d9e7fa); /* Gradient background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.student-form:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.form-title {
+    text-align: center; /* Center the title */
+    font-size: 2rem; /* Font size for title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark color for text */
+    text-transform: uppercase; /* Uppercase title */
+}
+
+.form-group {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+label {
+    flex: 0 0 30%; /* Label takes 30% of the width */
+    display: flex; /* Flex for icon and text */
+    align-items: center; /* Center icon and text vertically */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Color for labels */
+}
+
+label i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #007bff; /* Color for icons */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    flex: 1; /* Input takes remaining space */
+    padding: 12px; /* Padding inside inputs */
+    border: 2px solid #007bff; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for input effects */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    border-color: #0056b3; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+}
+
+.btn-submit {
+    background: linear-gradient(90deg, #007bff, #00bfff); /* Gradient button color */
+    color: #fff; /* Button text color */
+    padding: 12px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 1.1rem; /* Font size for button */
+    cursor: pointer; /* Cursor change on hover */
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.btn-submit:hover {
+    background: linear-gradient(90deg, #0056b3, #00aaff); /* Darker shade on hover */
+    transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .student-form {
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    .form-title {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+
+    .btn-submit {
+        font-size: 0.9rem; /* Smaller button text on mobile */
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack items on mobile */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    label {
+        flex: auto; /* Allow label to take available width */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+        width: 100%; /* Full width inputs on mobile */
+    }
+}
+
+
+/* index style  */
+/* Container for centering the form */
+.form-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Overall Form Styles */
+.students-form {
+    max-width: 670px; /* Maximum width for the form */
+    margin: 90px 20px; /* Margin to separate from the edge */
+    padding: 30px; /* Padding inside the form */
+    border-radius: 15px; /* More rounded corners */
+    background: linear-gradient(to bottom right, #f0f4f8, #e2e7ff); /* Soft gradient background */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.students-form:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+.form-title {
+    text-align: center; /* Center the title */
+    font-size: 2.5rem; /* Larger font size for title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark color for text */
+    text-transform: uppercase; /* Uppercase title */
+}
+
+.form-group {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+label {
+    flex: 0 0 30%; /* Label takes 30% of the width */
+    display: flex; /* Flex for icon and text */
+    align-items: center; /* Center icon and text vertically */
+    font-weight: bold; /* Bold text */
+    color: #555; /* Darker color for labels */
+    font-size: 1.1rem; /* Slightly larger font for labels */
+}
+
+label i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #007bff; /* Color for icons */
+    font-size: 1.2rem; /* Slightly larger icons */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    flex: 1; /* Input takes remaining space */
+    padding: 15px; /* Padding inside inputs */
+    border: 2px solid #007bff; /* Border for inputs */
+    border-radius: 10px; /* More rounded corners for inputs */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for input effects */
+    background: #fff; /* White background for inputs */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    border-color: #0056b3; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+}
+
+.btn-submit {
+    background: linear-gradient(90deg, #007bff, #00bfff); /* Gradient button color */
+    color: #fff; /* Button text color */
+    padding: 15px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 10px; /* More rounded corners for button */
+    font-size: 1.2rem; /* Larger font size for button */
+    cursor: pointer; /* Cursor change on hover */
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.btn-submit:hover {
+    background: linear-gradient(90deg, #0056b3, #00aaff); /* Darker shade on hover */
+    transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .student-form {
+        padding: 20px; /* Less padding on mobile */
+    }
+
+    .form-title {
+        font-size: 1.8rem; /* Smaller title on mobile */
+    }
+
+    .btn-submit {
+        font-size: 1rem; /* Smaller button text on mobile */
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack items on mobile */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    label {
+        flex: auto; /* Allow label to take available width */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+        width: 100%; /* Full width inputs on mobile */
+    }
+}
+
+/* circular bar */
+.circular-menu {
+    position: fixed; /* Fixed position */
+    top: 50%; /* Center vertically */
+    left: 20px; /* Align to the left */
+    transform: translateY(-50%); /* Offset to center vertically */
+    z-index: 1000;
+}
+
+.menu-icon {
+    background-color: #007bff; /* Background color for the toggle button */
+    color: white; /* Icon color */
+    padding: 15px; /* Increased padding for a larger button */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Pointer cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: background-color 0.3s; /* Transition for background color */
+    font-size: 24px; /* Icon size */
+}
+
+.menu-icon:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+input[type="checkbox"] {
+    display: none; /* Hide the checkbox */
+}
+
+.menu-items {
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Start from the top */
+    left: 60px; /* Space from the left side for the menu */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    transition: opacity 0.5s, visibility 0.5s; /* Smooth transition */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Hidden */
+}
+
+input[type="checkbox"]:checked ~ .menu-items {
+    opacity: 1; /* Show when checked */
+    visibility: visible; /* Make it visible */
+}
+
+.menu-items li {
+    background-color: #007bff; /* Background color for menu items */
+    margin: 5px 0; /* Space between items */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.menu-items li:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.menu-items a {
+    display: block; /* Make links block-level */
+    padding: 10px; /* Padding inside the links */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center align text */
+}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="students-form">
+    <h2 class="form-title">Student Information</h2>
+    <form method="POST">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> </label>
+            <input type="text" name="name" required placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="age"><i class="fas fa-calendar-alt"></i> </label>
+            <input type="number" name="age" required placeholder="Enter your age">
+        </div>
+
+        <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> </label>
+            <input type="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="year_of_joining"><i class="fas fa-calendar-check"></i> </label>
+            <input type="number" name="year_of_joining" required placeholder="Enter year of joining">
+        </div>
+
+        <div class="form-group">
+            <label for="rollno"><i class="fas fa-id-card"></i> </label>
+            <input type="text" name="rollno" required placeholder="Enter roll number">
+        </div>
+
+        <div class="form-group">
+            <label for="mobile_no"><i class="fas fa-phone"></i> </label>
+            <input type="text" name="mobile_no" required placeholder="Enter mobile number">
+        </div>
+
+        <div class="form-group">
+            <label for="place"><i class="fas fa-map-marker-alt"></i> </label>
+            <input type="text" name="place" required placeholder="Enter your place">
+        </div>
+
+        <input type="submit" value="Submit" class="btn-submit">
+        <a href="{% url 'home' %}" class="btn btn-outline-primary">Back to Home</a>
+    </form>
+</div>
+{% endblock %}

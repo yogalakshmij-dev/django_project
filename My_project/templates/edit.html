@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="POST" class="student-form">
+    {% csrf_token %}
+    <h2 class="form-title">Update Student Details</h2>
+
+    <div class="form-group">
+        <label for="name">
+            <i class="fas fa-user"></i> 
+        </label>
+        <input type="text" name="name" value="{{ data.name }}" required placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+        <label for="age">
+            <i class="fas fa-calendar-alt"></i> 
+        </label>
+        <input type="number" name="age" value="{{ data.age }}" required placeholder="Enter your age">
+    </div>
+
+    <div class="form-group">
+        <label for="email">
+            <i class="fas fa-envelope"></i> 
+        </label>
+        <input type="email" name="email" value="{{ data.email }}" required placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+        <label for="year_of_joining">
+            <i class="fas fa-graduation-cap"></i> 
+        </label>
+        <input type="number" name="year_of_joining" value="{{ data.year_of_joining }}" required placeholder="Enter year of joining">
+    </div>
+
+    <div class="form-group">
+        <label for="rollno">
+            <i class="fas fa-id-badge"></i> 
+        </label>
+        <input type="text" name="rollno" value="{{ data.rollno }}" required placeholder="Enter roll number">
+    </div>
+
+    <div class="form-group">
+        <label for="mobile_no">
+            <i class="fas fa-phone"></i> 
+        </label>
+        <input type="text" name="mobile_no" value="{{ data.mobile_no }}" required placeholder="Enter mobile number">
+    </div>
+
+    <div class="form-group">
+        <label for="place">
+            <i class="fas fa-map-marker-alt"></i> 
+        </label>
+        <input type="text" name="place" value="{{ data.place }}" required laceholder="Enter your place">
+    </div>
+
+    <input type="submit" value="Update" class="btn btn-submit">
+    <a href="{% url 'home' %}" class="btn btn-outline-info">Go Back</a>
+</form>
+{% endblock %}

@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+
+{% block title %}Student List{% endblock %}
+
+{% block content %}
+
+    <!-- Circular Navbar -->
+    <nav class="circular-menu">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu-items">
+            <li><a href="#about">About</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="{% url 'insert' %}">AddData</a></li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="{% url 'insert' %}">
+                    <i class="fas fa-user-plus"></i> Add data
+                </a>
+            </li> -->
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with About Us and Contact -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>
+                <i class="fas fa-user-graduate"></i> Welcome, {{ username }}!
+            </h1> <!-- Show the logged-in username -->
+            <p>
+                Manage student details efficiently and view all relevant information at your fingertips.<br>
+                Become more efficient and gain your knowledge to the next level. Industry-standard courses are for you. Let's unlock your potential!
+            </p>
+            <a href="#students" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+    
+
+    <!-- About Section 
+    <section id="about" class="about-section">
+        <h2>About Our Student Management Portal</h2>
+        <p>
+            This portal allows administrators to manage student data seamlessly. You can view, edit, and delete student information
+            from one place. Our system is designed to be intuitive and user-friendly, ensuring smooth management of all records.
+        </p>
+    </section>-->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Our Student Management Portal</h2>
+            <h1>Learn Without Limits<br>Grow Your <span>Knowledge</span></h1>
+            <p>This portal allows administrators to manage student data seamlessly. You can view, edit, and delete student information
+                from one place. Our system is designed to be intuitive and user-friendly, ensuring smooth management of all records.
+            </p>
+            <a href="#students" class="explore-btn">Explore Us</a>
+        </div>
+        <div class="about-images">
+            <div class="image-container">
+                <img src="../static/images/signup.jpg" alt="Image 1">
+                <img src="../static/images/log.jfif" alt="Image 2">
+                <img src="../static/images/download.jfif" alt="Image 3">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Student List Section -->
+    <section id="students" class="student-section">
+        <h2 class="section-title">Student List</h2>
+        <div class="table-responsive">
+            <table class="table table-striped student-table">
+                <thead>
+                    <tr>
+                        <th>S.no</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Year of Joining</th>
+                        <th>Roll No</th>
+                        <th>Mobile No</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in student %}
+                    <tr class="student-row">
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ i.name }}</td>
+                        <td>{{ i.age }}</td>
+                        <td>{{ i.email }}</td>
+                        <td>{{ i.year_of_joining }}</td> <!-- Display Year of Joining -->
+                        <td>{{ i.rollno }}</td> <!-- Display Roll No -->
+                        <td>{{ i.mobile_no }}</td> <!-- Display Mobile No -->
+                        <td><a href="{% url 'edit' i.id %}" class="btn btn-warning">Edit</a></td>
+                        <td><a href="{% url 'delete' i.id %}" class="btn btn-danger">Delete</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="action-buttons">
+            <a href="{% url 'insert' %}" class="btn btn-primary add-btn">Add Student</a>
+            <a href="{% url 'logout' %}" class="btn btn-secondary logout-btn">Logout</a>
+        </div>
+    </section>
+    
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="intro-text">If you have any questions or concerns, feel free to reach out to us:</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope icon"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:admin@schoolportal.com">admin@schoolportal.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt icon"></i>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <h3>Address</h3>
+                    <p>1234 School St., Cityville</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Student Management Portal. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+                <span>|</span>
+                <a href="#contact">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+                <span>|</span>
+                <a href="#">
+                    <i class="fas fa-shield-alt"></i> Privacy Policy
+                </a>
+            </div>
+        </div>
+    </footer>
+ 
+{% endblock %}
